@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    word-break:keep-all
+}
+
+::selection {
+    background-color: #000;
+    color: #fff;
+}
+
+body {
+    color: white;
+    font-family: Arial;
+    background-color: #313338;
+}
+
+main {
+    padding-top: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10px;
+    line-height:25px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #1E1F22;
+    height: 40px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    color: dimgray;
+    z-index: 10;
+}
+
+nav div {
+    user-select: none;
+    display: flex;
+    align-items: center;
+}
+
+p {
+    text-align:justify;
+    margin-bottom: 30px;
+}
+
+.bigSpoilerHolder {
+    display: flex;
+    flex-direction: column;
+    column-gap: 500px;
+    align-items: center;
+
+}
+
+.bigSpoilerHolder > div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px
+}
+
+.bigSpoilerHolder h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.bigSpoilerSection, .bigSpoilerSection button, .spoilerBlock {
+    border: dotted 2px #fff;
+}
+
+.bigSpoilerSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    padding: 10px;
+    background-color: rgba(221,62,42,0.3);
+    transition: 1s;
+    border-radius: 12px
+}
+
+.exceptions {
+    background-color: rgba(116,242,89,0.3)
+}
+
+.bigSpoilerSection button {
+    margin: auto;
+    width: 90px;
+    cursor: pointer;
+    background: none;
+    color: white;
+    transition: 0.2s
+}
+
+.bigSpoilerSection button:hover {
+    background-color: rgba(255,255,255,0.3);
+    transform: rotate(2deg);
+}
+
+.spoilerBlock {
+    display: none;
+    margin-top: 12px;
+    padding: 5px;
+    padding-right: 15px;
+    transition: 1s;
+    transform: scale(0);
+}
+
+.spoilerBlock ul {
+    padding-left: 20px;
+    list-style: inside;
+}
+
+.spoilerBlock ul ul{
+     padding-left: 40px;
+    list-style: square;
+}
+
+ul li {
+    line-height: 30px;
+}
+
+ul ul li {
+    line-height: 20px;
+}
+
+.spoilerShown {
+    display: block;
+    animation: strechIn 0.3s;
+    border-radius: 12px;
+    transform: scale(1.0,1.0)
+}
+
+@keyframes strechIn {
+    0% {
+        height: 0px;
+        transform: scale(1.0,0.0);
+    }
+    100% {
+        height: 100%;
+        transform: scale(1.0,1.0);
+    }
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.fakePingName {
+    background-color: #3A406E;
+    color: #C9CDF2;
+    padding: 3px;
+    border-radius: 4px;
+    user-select: none;
+    width:fit-content;
+}
+
+.fakePingName:hover {
+    background-color: #5865F2;
+    color: #fff;
+}
+
+.secret {
+    color: #888;
+}
+
+.logoImage {
+    object-fit: scale-down;
+    width: 150px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.excludedChannelList {
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+
+    .bigSpoilerHolder > div {
+        grid-template-columns: 1fr;
+        row-gap: 30px
+    }
+}
+

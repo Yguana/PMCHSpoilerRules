@@ -30,9 +30,12 @@ nav {
     font-weight: 700;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding-left: 50px;
+    padding-right: 50px;
     color: dimgray;
     z-index: 10;
+    transform: translateY(-1px)
 }
 
 nav div {
@@ -41,9 +44,15 @@ nav div {
     align-items: center;
 }
 
+#updateData {
+    font-size: 10px;
+    text-align: right;
+}
+
 p {
-    text-align:justify;
+    text-align: justify;
     margin-bottom: 30px;
+    width: 100%;
 }
 
 .bigSpoilerHolder {
@@ -179,11 +188,21 @@ h1 {
     text-align: center;
 }
 
+#currentLimbusSpoilers {
+    grid-column-start: span 2;
+}
+
 @media screen and (max-width: 600px) {
 
     .bigSpoilerHolder > div {
         grid-template-columns: 1fr;
         row-gap: 30px
     }
+
+    .bigSpoilerSection button:hover {
+        background-color: rgba(255,255,255,0.0);
+        transform: rotate(0deg);
+    }
+
 }
 

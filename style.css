@@ -3,11 +3,6 @@
     word-break:keep-all
 }
 
-::selection {
-    background-color: #000;
-    color: #fff;
-}
-
 body {
     color: white;
     font-family: Arial;
@@ -128,11 +123,12 @@ p {
 }
 
 ul li {
-    line-height: 30px;
+    margin-bottom: 3px;
+    margin-top: 3px;
 }
 
 ul ul li {
-    line-height: 20px;
+    margin-bottom: 3px;
 }
 
 .spoilerShown {
@@ -157,6 +153,13 @@ h1 {
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 30px;
 }
 
 .fakePingName {
@@ -188,7 +191,7 @@ h1 {
     text-align: center;
 }
 
-#currentLimbusSpoilers {
+.singleRowSpoiler {
     grid-column-start: span 2;
 }
 
@@ -202,6 +205,22 @@ h1 {
     .bigSpoilerSection button:hover {
         background-color: rgba(255,255,255,0.0);
         transform: rotate(0deg);
+    }
+
+    .excludedChannelList .fakePingName {
+        display: inline-block;
+        background-color: #3A406E;
+        color: #C9CDF2;
+        border-radius: 4px;
+        padding: 2px;
+        user-select: none;
+        width: fit-content;
+        margin: 1px
+    }
+
+    .excludedChannelList .fakePingName:hover {
+        background-color: #5865F2;
+        color: #fff;
     }
 
 }

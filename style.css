@@ -70,6 +70,12 @@ p {
     margin-top: 50px;
 }
 
+.bigSpoilerHolder h1::after, .bigSpoilerHolder h1::before {
+    letter-spacing: -2px;
+    margin: 10px;
+    content: "     ---------     ";
+}
+
 .bigSpoilerSection, .bigSpoilerSection button, .spoilerBlock {
     border: dotted 2px #fff;
 }
@@ -221,6 +227,13 @@ h2 {
     .excludedChannelList .fakePingName:hover {
         background-color: #5865F2;
         color: #fff;
+    }
+
+
+    h1::after, h1::before {
+        letter-spacing: -2px;
+        margin: 10px;
+        content: "";
     }
 
 }

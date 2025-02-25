@@ -11,10 +11,10 @@ body {
 
 main {
     padding-top: 50px;
+    padding-bottom: 50px;
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 10px;
-    line-height:25px;
+    line-height: 25px;
 }
 
 nav {

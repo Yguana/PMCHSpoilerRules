@@ -58,11 +58,50 @@ p {
 
 }
 
-.bigSpoilerHolder > div {
-    width: 100%;
+.bigSpoilerHolder > div  {
+    width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 30px
+    column-gap: 100px
+}
+
+#spoilerDemonstration {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'sdTitle1 sdTitle2'
+        'sdContent1 sdContent2';
+    column-gap: 100px
+}
+
+#sdTitle1 {
+    grid-area: sdTitle1;
+    text-align: center
+}
+
+#sdTitle2 {
+    grid-area: sdTitle2;
+    text-align: center
+}
+
+#spoilerDemonstration img {
+    width: 100%;
+    aspect-ratio: auto;
+    margin-bottom: 30px;
+}
+
+#spoilerDemonstration p {
+   margin: 0
+}
+
+#spoilerDemonstration .normalP {
+   margin-bottom: 30px;
+}
+
+#spoilerDemonstration .centered {
+    text-align: center;
+    height: 25px;
+    margin: 1px;
 }
 
 .bigSpoilerHolder h1 {
@@ -182,10 +221,6 @@ h2 {
     color: #fff;
 }
 
-.secret {
-    color: #888;
-}
-
 .logoImage {
     object-fit: scale-down;
     width: 150px;
@@ -201,10 +236,53 @@ h2 {
     grid-column-start: span 2;
 }
 
-@media screen and (max-width: 600px) {
+.fakeSpoiler {
+    width: auto;
+    height: 25px;
+    background-color: #1E1F22;
+    border-radius: 5px;
+    color: transparent;
+    user-select: none;
+    display: inline-block
+}
 
+.fakeSpoilerShown {
+    width: auto;
+    height: 25px;
+    background-color: #414348;
+    border-radius: 5px;
+    color: white;
+    display: inline-block
+}
+
+.fakeSpoiler:hover {
+    cursor: pointer;
+    background-color: #212326
+}
+
+@media screen and (max-width: 600px) {
     .bigSpoilerHolder > div {
         grid-template-columns: 1fr;
+        row-gap: 30px
+    }
+
+    .bigSpoilerHolder > div {
+        width: 80%;
+        grid-template-columns: 1fr;
+        row-gap: 30px
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    #spoilerDemonstration {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'sdTitle1'
+            'sdContent1'
+            'sdTitle2'
+            'sdContent2';
         row-gap: 30px
     }
 
@@ -230,9 +308,9 @@ h2 {
     }
 
 
-    h1::after, h1::before {
-        letter-spacing: -2px;
-        margin: 10px;
+    .bigSpoilerHolder h1::after, .bigSpoilerHolder h1::before {
+        letter-spacing: 0px;
+        margin: 0px;
         content: "";
     }
 

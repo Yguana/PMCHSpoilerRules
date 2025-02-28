@@ -3,36 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMCH Spoiler List</title>
+    <meta name="author" content="Project Moon Community Hub">
+    <meta name="description" content="Can you post images of that? Let me tell you if so!">
     <link rel="stylesheet" href="style.css">
-    <title>Project Moon Community Hub</title>
+    <link rel="icon" href="icon.png">
+    <title>Project Moon Community Hub Spoiler List</title>
     <script src="script.js" defer></script>
 
 </head>
 <body>
-   <nav><div>#spoiler-rules</div> <div id="updateData">last updated:21/02/25</div></nav>
+   <nav><div>#spoiler-rules</div> <div id="updateData">last updated:27/02/25</div></nav>
    <main>
        <h1>Welcome, Manager! </h1>
        <p>This page contains a full list of every single game mechanic or lore piece relevant
        enough to be considered a spoiler, with explanations for all the reasons they are (not)
        considered a spoiler within the server.</p>
-       <p>Contents hereby reffered to as a spoiler may still be posted in the server, but they
-       will require text spoilers <span class="secret">(achived by placing || inbetween the sensitive text)</span> or media
-       spoilers <span class="secret">(achived by selecting the spoiler option when sending an image/video through Discord)</span>
-       in parts of the server where the content is considered a spoiler.</p>
-       <p>There are three main sections for spoilers, each representing the a main line Project
-       Moon game. Within each section, there will be sub categories with a general description,
-       along with a full list of spoiler and exceptions, with explanations if deemed necessary.</p>
+       
+       <p>There are three main sections for spoilers, each representing a mainline Project
+       Moon game. Within each section, there will be subcategories with a general description,
+       along with a full list of spoilers and exceptions, with explanations if deemed necessary.</p>
+
        <p>Memorizing all of the details is not necessary, this list is meant solely to clarify
        what is and isn't a spoiler down to specifics. For much of the same reason, <u>we advise you 
        to not read any of the togglable sections if you want to have a spoiler-free experience</u>,
        as they provide more than necessary if you only wish to learn what to generally be careful
        about talking without a spoiler tag.</p>
+
        <p>If you come by a mistake or believe to have found an inaccuracy/contradiction, please
        contact <span class="fakePingName">@yguana_</span> through Discord DM's.</p>
 
 
 
+
+
        <div class="bigSpoilerHolder">
+           <h1>HOW TO USE SPOILER TAGS</h1>
+           <p>Contents hereby reffered to as a spoiler in certain sections may still be posted on them, but they
+           will require a spoiler tag.</p>
+
+           <div id="spoilerDemonstration">
+               <h2 id="sdTitle1">TEXT TAGS</h2>
+               <div>
+
+                   <p>Place two vertical bar characters (||) inbetween the spoiler information...</p><br>
+                   <p class="centered">||like this||</p><br>
+                   <p>...to make it require a click to see.</p><br>
+                   <div class="centered"><div class="fakeSpoiler" id="fs1" onclick=revealFakeTextSpoiler("fs1")>like this</div></div><br>
+                   <p>Adding a brief indicator of what game/progression stage the spoiler reffers to also goes a long way:</p><br>
+
+                   <div class="centered">[Lobocorp] <span class="fakeSpoiler" id="fs2" onclick=revealFakeTextSpoiler("fs2")>Angela exists.</span> </div><br>
+                   <div class="centered">Ruina SotC <span class="fakeSpoiler" id="fs3" onclick=revealFakeTextSpoiler("fs3")>This page is so good!</span> </div><br>
+                   <div class="centered">(Limbus C7) <span class="fakeSpoiler" id="fs4" onclick=revealFakeTextSpoiler("fs4")>I really hate this boss</span></div><br>
+
+               </div>
+               <h2 id="sdTitle2">MEDIA TAGS</h2>
+               <div>
+
+                   <p class="normalP">When attatching an image or video to a message, Discord allows you to toggle an initial spoiler blur to it:</p>
+                   <img src="spoiler_example.png">
+                   <p class="normalP"> The button is very easy to see on desktop, but it requires holding the image on mobile to call for an image property menu.</p>
+                   <p class="normalP">
+                       If you sent media containing a spoiler by mistake, you may remove the attachment and edit the message to contain the embed link,
+                       spoilered trough the text tag method, if deleting the image is not desirable.
+                   </p>
+
+
+               </div>
+
+
+           </div>
+           
+
+
 
            <h1>LOBOTOMY CORPORATION</h1>
            <img src="LC.png" alt="Logo of Lobotomy Corporation" class="logoImage">
@@ -361,8 +404,10 @@
                                cutscenes and credenza, in a context vacuum;
                            </li>
                            <ul>
-                               <li>The existence of The Black Silence, as mentioned in the Musicians of Bremen,
-                               The Thumb's cutscenes, and credenza entries;</li>
+                               <li>
+                                   The existence of The Black Silence, as mentioned in the Musicians of Bremen,
+                                   The Thumb's cutscenes, and credenza entries;
+                               </li>
                            </ul>
                        </ul>
                    </div>
@@ -437,19 +482,19 @@
                    <button onclick=showSpoilers("spoilerDetails18")>Show Spoilers</button>
                    <div class="spoilerBlock" id="spoilerDetails18">
                        <ul>
-                          <li>New pages, passives, and gimmicks;</li>
-                          <li>Changes to Angela's and Roland's outfits;</li>
-                          <li>Pre-fight, post-fight cutscenes and new story details contained within;</li>
-                          <li>Apperance of Abnormalities/EGO without previous books:</li>
-                          <ul>
-                              <li>Dream of a Black Swan;</li>
-                              <li>The Silent Orchestra/Da Capo;</li>
-                              <li>Jester of Nihil;</li>
-                              <li>Oz/The Adult who tells Lies;</li>
-                              <li>Nothing There/Mimicry.</li>
-                          </ul>
+                           <li>New pages, passives, and gimmicks;</li>
+                           <li>Changes to Angela's and Roland's outfits;</li>
+                           <li>Pre-fight, post-fight cutscenes and new story details contained within;</li>
+                           <li>Apperance of Abnormalities/EGO without previous books:</li>
+                           <ul>
+                               <li>Dream of a Black Swan;</li>
+                               <li>The Silent Orchestra/Da Capo;</li>
+                               <li>Jester of Nihil;</li>
+                               <li>Oz/The Adult who tells Lies;</li>
+                               <li>Nothing There/Mimicry.</li>
+                           </ul>
                        </ul>
-               </div>
+                   </div>
                </div>
            </div>
 
@@ -538,8 +583,10 @@
                    <button onclick=showSpoilers("spoilerDetails9")>Show Spoilers</button>
                    <div class="spoilerBlock" id="spoilerDetails9">
                        <ul>
-                           <li>Boss fights and cutscenes played on boss fight stages
-                           from main Cantos which contain unique soundtracks (only played in that scenario or rematches in MDs);</li>
+                           <li>
+                               Boss fights and cutscenes played on boss fight stages
+                               from main Cantos which contain unique soundtracks (only played in that scenario or rematches in MDs);
+                           </li>
                            <ul>
                                <li>Kromer;</li>
                                <li>Spicebush Dongbaek;</li>

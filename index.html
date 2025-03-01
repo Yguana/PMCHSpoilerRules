@@ -14,646 +14,678 @@
 
 </head>
 <body>
-   <nav><div>#spoiler-rules</div> <div id="updateData">last updated:27/02/25</div></nav>
-   <main>
-       <h1>Welcome, Manager! </h1>
-       <p>This page contains a full list of every single game mechanic or lore piece relevant
-       enough to be considered a spoiler, with explanations for all the reasons they are (not)
-       considered a spoiler within the server.</p>
-       
-       <p>There are three main sections for spoilers, each representing a mainline Project
-       Moon game. Within each section, there will be subcategories with a general description,
-       along with a full list of spoilers and exceptions, with explanations if deemed necessary.</p>
+    <nav><div>#spoiler-rules</div> <div id="updateData">last updated:01/03/25</div></nav>
+    <main>
+        <h1>Welcome, Manager! </h1>
+        <p>
+            This page contains a full list of every single game mechanic or lore piece relevant
+            enough to be considered a spoiler, with explanations for all the reasons they are (not)
+            considered a spoiler within the server.
+        </p>
 
-       <p>Memorizing all of the details is not necessary, this list is meant solely to clarify
-       what is and isn't a spoiler down to specifics. For much of the same reason, <u>we advise you 
-       to not read any of the togglable sections if you want to have a spoiler-free experience</u>,
-       as they provide more than necessary if you only wish to learn what to generally be careful
-       about talking without a spoiler tag.</p>
+        <p>
+            There are three main sections for spoilers, each representing a mainline Project
+            Moon game. Within each section, there will be subcategories with a general description,
+            along with a full list of spoilers and exceptions, with explanations if deemed necessary.
+        </p>
 
-       <p>If you come by a mistake or believe to have found an inaccuracy/contradiction, please
-       contact <span class="fakePingName">@yguana_</span> through Discord DM's.</p>
+        <p>
+            Memorizing all of the details is not necessary, this list is meant solely to clarify
+            what is and isn't a spoiler down to specifics. For much of the same reason, <u>
+                we advise you
+                to not read any of the togglable sections if you want to have a spoiler-free experience
+            </u>,
+            as they provide more than necessary if you only wish to learn what to generally be careful
+            about talking without a spoiler tag.
+        </p>
 
-
-
-
-
-       <div class="bigSpoilerHolder">
-           <h1>HOW TO USE SPOILER TAGS</h1>
-           <p>Contents hereby reffered to as a spoiler in certain sections may still be posted on them, but they
-           will require a spoiler tag.</p>
-
-           <div id="spoilerDemonstration">
-               <h2 id="sdTitle1">TEXT TAGS</h2>
-               <div>
-
-                   <p>Place two vertical bar characters (||) inbetween the spoiler information...</p><br>
-                   <p class="centered">||like this||</p><br>
-                   <p>...to make it require a click to see.</p><br>
-                   <div class="centered"><div class="fakeSpoiler" id="fs1" onclick=revealFakeTextSpoiler("fs1")>like this</div></div><br>
-                   <p>Adding a brief indicator of what game/progression stage the spoiler reffers to also goes a long way:</p><br>
-
-                   <div class="centered">[Lobocorp] <span class="fakeSpoiler" id="fs2" onclick=revealFakeTextSpoiler("fs2")>Angela exists.</span> </div><br>
-                   <div class="centered">Ruina SotC <span class="fakeSpoiler" id="fs3" onclick=revealFakeTextSpoiler("fs3")>This page is so good!</span> </div><br>
-                   <div class="centered">(Limbus C7) <span class="fakeSpoiler" id="fs4" onclick=revealFakeTextSpoiler("fs4")>I really hate this boss</span></div><br>
-
-               </div>
-               <h2 id="sdTitle2">MEDIA TAGS</h2>
-               <div>
-
-                   <p class="normalP">When attatching an image or video to a message, Discord allows you to toggle an initial spoiler blur to it:</p>
-                   <img src="spoiler_example.png">
-                   <p class="normalP"> The button is very easy to see on desktop, but it requires tapping the image on mobile to call for an image property menu.</p>
-                   <p class="normalP">
-                       If you sent media containing a spoiler by mistake, you may remove the attachment and edit the message to contain the embed link,
-                       spoilered trough the text tag method, if deleting the image is not desirable.
-                   </p>
-
-
-               </div>
-
-
-           </div>
-           
+        <p>
+            If you come by a mistake or believe to have found an inaccuracy/contradiction, please
+            contact <span class="fakePingName">@yguana_</span> through Discord DM's.
+        </p>
 
 
 
-           <h1>LOBOTOMY CORPORATION</h1>
-           <img src="LC.png" alt="Logo of Lobotomy Corporation" class="logoImage">
 
-           <p class="excludedChannelList">
-               Excluded channels: <br>
-               <span class="fakePingName">#lobotomy-spoilers</span>
-               <span class="fakePingName">#lobotomy-lounge</span>
-               <span class="fakePingName">Ruina Category</span>
-               <span class="fakePingName">Limbus Category</span>
-           </p>
 
-           <h1>GAMEPLAY</h1>
-           <p>
-               All regular days are considered spoiler free. This extends to abnormality information, E.G.O,
-               regular missions, and department researches. You can freely discuss the two optional bossfights
-               (Whitenight and Apocalypse Bird). The existence of Core supressions is not a spoiler, though any further
-               information must be explained behind spoiler tags. Days 46 through 50 also fall under the spoiler classification.
-           </p>
-           <div>
-               <div class="bigSpoilerSection">
-                   <button onclick=showSpoilers("spoilerDetails1")>Show Spoilers</button>
-                   <div class="spoilerBlock" id="spoilerDetails1">
-                       <ul>
-                           <li>Core supressions details;</li>
-                           <ul>
-                               <li>Gameplay gimmicks (Malkuth's randomized works, Yesod screen distortions, etc.);</li>
-                               <li>Animated Sephirah Meltdown;</li>
-                               <li>Screen Filters;</li>
-                               <li>Soundtracks used;</li>
-                           </ul>
-                           <li>Core supressions rewards;</li>
-                           <li>Days 46-49 (Hell Week);</li>
-                           <ul>
-                               <li>Architecture department (All appearances, deployment phase HUD);</li>
-                               <li>White Ordeals (Entities, entrance/defeat text, HUD indicator, etc.);
-                               <li>Return of Core Supression Modifiers;</li>
-                               <li>Soundtracks used;</li>
-                           </ul>
-                           <li>Day 50;</li>
-                           <ul>
-                               <li>Changes made within the facility;
-                               <li>Soundtracks used;</li>
-                               <li>Game credits;</li>
-                           </ul>
-                           <li>Menu alterations post game completion.</li>
-                       </ul>
-                   </div>
-               </div>
-               <div class="bigSpoilerSection exceptions">
-                   <button onclick=showSpoilers("spoilerDetails2")>Show Exceptions</button>
-                   <div class="spoilerBlock" id="spoilerDetails2">
-                       <ul>
-                           <li>Existence of Core supressions;</li>
-                           <ul>
-                               <li>Non-specific visual indicators on the deployment phase;</li>
-                               <li>Explanation of the Atziluth trap (Where you're locked from doing Core Supressions past day 46);</li>
-                           </ul>
-                           <li>Requirements for the true ending (not ending itself).</li>
-                       </ul>
-                   </div>
-               </div>
-           </div>
+        <div class="bigSpoilerHolder">
+            <h1>HOW TO USE SPOILER TAGS</h1>
+            <p>
+                Contents hereby reffered to as a spoiler in certain sections may still be posted on them, but they
+                will require a spoiler tag.
+            </p>
 
-           <h1>STORY</h1>
-           <p>
-               In general, all characters are only spoiler-free on a surface level. Angela, X, A and B may be discussed within the context
-               and information provided by the game's early sections without any spoiler tags being required. The same applies to the Sephirah
-               during their first introductions. Any flashbacks or other means used to expose backstory enters spoiler territory. The existence
-               of Binah and Hokma do not count as spoilers.
-           </p>
-           <div>
-               <div class="bigSpoilerSection">
-                   <button onclick=showSpoilers("spoilerDetails3")>Show Spoilers</button>
-                   <div class="spoilerBlock" id="spoilerDetails3">
-                       <ul>
-                           <li>All text and custom CG art from the cutscenes displayed upon unlocking and finishing a Core Supression;</li>
-                           <li>Names, appearances and backstories of the Sephirah's past lives;</li>
-                           <ul>
-                               <li>Elijah;</li>
-                               <li>Gabriel;</li>
-                               <li>Michelle;</li>
-                               <li>Giovanni;</li>
-                               <li>Lisa;</li>
-                               <li>Enoch;</li>
-                               <li>Daniel;</li>
-                               <li>Kali / The Red Mist;</li>
-                               <li>Gabriel;</li>
-                               <li>Garion;</li>
-                               <li>Bejamin;</li>
-                           </ul>
-                           <li>Ayin, Carmen;</li>
-                           <ul>
-                               <li>Full names and appearance;</li>
-                               <li>Current whereabouts in the game's timeline;</li>
-                               <li>Backstory;</li>
-                           </ul>
-                           <li>Sephirah filter-free / box form appearances (including in gameplay);</li>
-                           <li>Hydraulic prense scene;</li>
-                           <li>The Bucket and the Well;</li>
-                           <li>Cogito;</li>
-                           <li>The Seed of Light Project;</li>
-                           <li>The Script;</li>
-                           <li>Demonstration of the Extraction process;</li>
-                           <li>All Architecture department sepirah:</li>
-                           <ul>
-                               <li>Abel;</li>
-                               <li>Abram;</li>
-                               <li>Adam;</li>
-                           </ul>
-                           <li>True ending cutscene.</li>
-                       </ul>
-                   </div>
-               </div>
-               <div class="bigSpoilerSection exceptions">
-                   <button onclick=showSpoilers("spoilerDetails4")>Show Exceptions</button>
-                   <div class="spoilerBlock" id="spoilerDetails4">
-                       <ul>
-                           <li>First apperance of Carmen's silhouette;</li>
-                           <li>Carmen's mention within Forsaken Muderer's E.G.O description, in a context vacuum.</li>
-                       </ul>
-                   </div>
-               </div>
-           </div>
+            <div id="spoilerDemonstration">
+                <h2 id="sdTitle1">TEXT TAGS</h2>
+                <div>
+
+                    <p>Place two vertical bar characters (||) inbetween the spoiler information...</p><br>
+                    <p class="centered">||like this||</p><br>
+                    <p>...to make it require a click to see.</p><br>
+                    <div class="centered"><div class="fakeSpoiler" id="fs1" onclick=revealFakeTextSpoiler("fs1")>like this</div></div><br>
+                    <p>Adding a brief indicator of what game/progression stage the spoiler reffers to also goes a long way:</p><br>
+
+                    <div class="centered">[Lobocorp] <span class="fakeSpoiler" id="fs2" onclick=revealFakeTextSpoiler("fs2")>Angela exists.</span> </div><br>
+                    <div class="centered">Ruina SotC <span class="fakeSpoiler" id="fs3" onclick=revealFakeTextSpoiler("fs3")>This page is so good!</span> </div><br>
+                    <div class="centered">(Limbus C7) <span class="fakeSpoiler" id="fs4" onclick=revealFakeTextSpoiler("fs4")>I really hate this boss</span></div><br>
+
+                </div>
+                <h2 id="sdTitle2">MEDIA TAGS</h2>
+                <div>
+
+                    <p class="normalP">When attatching an image or video to a message, Discord allows you to toggle an initial spoiler blur to it:</p>
+                    <img src="spoiler_example.png">
+                    <p class="normalP"> The button is very easy to see on desktop, but it requires tapping the image on mobile to call for an image property menu.</p>
+                    <p class="normalP">
+                        If you sent media containing a spoiler by mistake, you may remove the attachment and edit the message to contain the embed link,
+                        spoilered trough the text tag method, if deleting the image is not desirable.
+                    </p>
+
+
+                </div>
+
+
+            </div>
 
 
 
-           <h1>LIBRARY OF RUINA</h1>
-           <img src="LOR.png" alt="Logo of Library of Ruina" class="logoImage">
+
+            <h1>LOBOTOMY CORPORATION</h1>
+            <img src="LC.png" alt="Logo of Lobotomy Corporation" class="logoImage">
+
+            <p class="excludedChannelList">
+                Excluded channels: <br>
+                <span class="fakePingName">#lobotomy-spoilers</span>
+                <span class="fakePingName">#lobotomy-lounge</span>
+                <span class="fakePingName">Ruina Category</span>
+                <span class="fakePingName">Limbus Category</span>
+            </p>
+
+            <h1>GAMEPLAY</h1>
+            <p>
+                All regular days are considered spoiler free. This extends to abnormality information, E.G.O,
+                regular missions, and department researches. You can freely discuss the two optional bossfights
+                (Whitenight and Apocalypse Bird). The existence of Core supressions is not a spoiler, though any further
+                information must be explained behind spoiler tags. Days 46 through 50 also fall under the spoiler classification.
+            </p>
+            <div>
+                <div class="bigSpoilerSection">
+                    <button onclick=showSpoilers("spoilerDetails1")>Show Spoilers</button>
+                    <div class="spoilerBlock" id="spoilerDetails1">
+                        <ul>
+                            <li>Core supressions details;</li>
+                            <ul>
+                                <li>Gameplay gimmicks (Malkuth's randomized works, Yesod screen distortions, etc.);</li>
+                                <li>Animated Sephirah Meltdown;</li>
+                                <li>Screen Filters;</li>
+                                <li>Soundtracks used;</li>
+                            </ul>
+                            <li>Core supressions rewards;</li>
+                            <li>Days 46-49 (Hell Week);</li>
+                            <ul>
+                                <li>Architecture department (All appearances, deployment phase HUD);</li>
+                                <li>White Ordeals (Entities, entrance/defeat text, HUD indicator, etc.);
+                                <li>Return of Core Supression Modifiers;</li>
+                                <li>Soundtracks used;</li>
+                            </ul>
+                            <li>Day 50;</li>
+                            <ul>
+                                <li>Changes made within the facility;
+                                <li>Soundtracks used;</li>
+                                <li>Game credits;</li>
+                            </ul>
+                            <li>Menu alterations post game completion.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bigSpoilerSection exceptions">
+                    <button onclick=showSpoilers("spoilerDetails2")>Show Exceptions</button>
+                    <div class="spoilerBlock" id="spoilerDetails2">
+                        <ul>
+                            <li>Existence of Core supressions;</li>
+                            <ul>
+                                <li>Non-specific visual indicators on the deployment phase;</li>
+                                <li>Explanation of the Atziluth trap (Where you're locked from doing Core Supressions past day 46);</li>
+                            </ul>
+                            <li>Requirements for the true ending (not ending itself).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h1>STORY</h1>
+            <p>
+                In general, all characters are only spoiler-free on a surface level. Angela, X, A and B may be discussed within the context
+                and information provided by the game's early sections without any spoiler tags being required. The same applies to the Sephirah
+                during their first introductions. Any flashbacks or other means used to expose backstory enters spoiler territory. The existence
+                of Binah and Hokma do not count as spoilers.
+            </p>
+            <div>
+                <div class="bigSpoilerSection">
+                    <button onclick=showSpoilers("spoilerDetails3")>Show Spoilers</button>
+                    <div class="spoilerBlock" id="spoilerDetails3">
+                        <ul>
+                            <li>All text and custom CG art from the cutscenes displayed upon unlocking and finishing a Core Supression;</li>
+                            <li>Names, appearances and backstories of the Sephirah's past lives;</li>
+                            <ul>
+                                <li>Elijah;</li>
+                                <li>Gabriel;</li>
+                                <li>Michelle;</li>
+                                <li>Giovanni;</li>
+                                <li>Lisa;</li>
+                                <li>Enoch;</li>
+                                <li>Daniel;</li>
+                                <li>Kali / The Red Mist;</li>
+                                <li>Gabriel;</li>
+                                <li>Garion;</li>
+                                <li>Bejamin;</li>
+                            </ul>
+                            <li>Ayin, Carmen;</li>
+                            <ul>
+                                <li>Full names and appearance;</li>
+                                <li>Current whereabouts in the game's timeline;</li>
+                                <li>Backstory;</li>
+                            </ul>
+                            <li>Sephirah filter-free / box form appearances (including in gameplay);</li>
+                            <li>Hydraulic prense scene;</li>
+                            <li>The Bucket and the Well;</li>
+                            <li>Cogito;</li>
+                            <li>The Seed of Light Project;</li>
+                            <li>The Script;</li>
+                            <li>Demonstration of the Extraction process;</li>
+                            <li>All Architecture department sepirah:</li>
+                            <ul>
+                                <li>Abel;</li>
+                                <li>Abram;</li>
+                                <li>Adam;</li>
+                            </ul>
+                            <li>True ending cutscene.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bigSpoilerSection exceptions">
+                    <button onclick=showSpoilers("spoilerDetails4")>Show Exceptions</button>
+                    <div class="spoilerBlock" id="spoilerDetails4">
+                        <ul>
+                            <li>First apperance of Carmen's silhouette;</li>
+                            <li>Carmen's mention within Forsaken Muderer's E.G.O description, in a context vacuum.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
 
-           <h1>RECEPTIONS</h1>
-           <p>
-               Any and all receptions above the Urban Nightmare Level are classified as a general spoiler.
-               This includes pages, characters (including unnamed extra enemies), cutscenes, dialogue and lore. If their respective organizations
-               or individual characters are mentioned previously in the game, only the new content is considered a spoiler.
-           </p>
 
-           <h2>STAR OF THE CITY</h2>
-
-           <p class="excludedChannelList">
-               Excluded channels: <br>
-               <span class="fakePingName">#ruina-star-of-city</span>
-               <span class="fakePingName">#ruina-impuritas</span>
-               <span class="fakePingName">#ruina-spoilers</span>
-               <span class="fakePingName">#star-of-city-deck-design</span>
-               <span class="fakePingName">#impuritas-deck-design</span>
-               <span class="fakePingName">#ruina-mods</span>
-               <span class="fakePingName">#ruina-modding</span>
-               <span class="fakePingName">#spoiler-ruina-fan-content</span>
-               <span class="fakePingName">Limbus Category</span>
-           </p>
-
-           <div>
-               <div class="bigSpoilerSection">
-                   <button onclick=showSpoilers("spoilerDetails7")>Show Spoilers</button>
-                   <div class="spoilerBlock" id="spoilerDetails7">
-                       <ul>
-                           <li>The Thumb's pages, battle appearances and story;</li>
-                           <ul>
-                               <li>Katriel;</li>
-                               <li>Denis</li>
-                               <li>Boris;</li>
-                               <li>Kalo;</li>
-                           </ul>
-                           <li>The Index's new pages, battle appearances and story;</li>
-                           <ul>
-                               <li>Esther;</li>
-                               <li>Gloria</li>
-                               <li>Hubert;</li>
-                           </ul>
-                           <li> 얀샋ㄷ요무's (Distorted Yan) pages, battle appearances and story;</li>
-                           <ul>
-                               <li>얀샋ㄷ요무;</li>
-                               <li>Moirai (The Weaver);</li>
-                           </ul>
-                           <li> Blue Reverberation's (Church of Gears) pages, battle appearances and story;</li>
-                           <ul>
-                               <li>Church of Gears Worshipers;</li>
-                               <li>Argalia</li>
-                           </ul>
-                           <li> The Red Mist's pages, battle appearances and story;</li>
-                           <li> The Purple Tear's pages, battle appearances and story;</li>
-                           <li> Liu Association and Xiao's pages, battle appearances and story;</li>
-                           <ul>
-                               <li>Mei;</li>
-                               <li>Cecil;</li>
-                               <li>Lowell;</li>
-                               <li>Chun;</li>
-                               <li>Miris;</li>
-                               <li>Xiao;</li>
-                           </ul>
-                           <li> Cane Office pages, battle appearances and story;</li>
-                           <ul>
-                               <li>Bada;</li>
-                               <li>Martina;</li>
-                               <li>Nemo;</li>
-                           </ul>
-                           <li> R. Corp pages, battle appearances and story;</li>
-                           <ul>
-                               <li>Myo;</li>
-                               <li>Maxim;</li>
-                               <li>Rudolph;</li>
-                               <li>Nikolai;</li>
-                           </ul>
-                           <li> General invitation's credenza book lore;</li>
-                           <ul>
-                               <li>Dong-hwan;</li>
-                               <li>Night Awls + Allen;</li>
-                               <li>Udjat;</li>
-                               <li>Mirae Life Insurance + Irina;</li>
-                               <li>Leaflet Workshop + Yae;</li>
-                               <li>Bayard's Office.</li>
-                           </ul>
-                       </ul>
-                   </div>
-               </div>
-               <div class="bigSpoilerSection exceptions">
-                   <button onclick=showSpoilers("spoilerDetails8")>Show Exceptions</button>
-                   <div class="spoilerBlock" id="spoilerDetails8">
-                       <ul>
-                           <li>Details mentioned in Limbus about specific organizations, in a context vacuum;</li>
-                           <ul>
-                               <li>Liu Association's general fire theme;</li>
-                               <li>Church of Gear Worshippers' existence;</li>
-                               <li>R. Corp's clone arena, as described by R. Corp Merusault's uptie story;</li>
-                           </ul>
-                           <li>
-                               Appearances or mentions of characters before their fights, in
-                               cutscenes and credenza, in a context vacuum;
-                           </li>
-                           <ul>
-                               <li>The existence of The Index, as well as their Urban Nightmare fight;</li>
-                               <li>Yan's apperances in cutscenes;</li>
-                               <li>Argalia's apperances in cutscenes;</li>
-                               <li>
-                                   The existence of The Purple Tear, as mentioned in the Canard intro cutscene, and credenza entries;
-                               </li>
-                           </ul>
-                           <li>
-                               Appearances of characters which appeared in Lobotomy Corporation;
-                           </li>
-                           <ul>
-                               <li>Kali/The Red Mist;</li>
-                               <li>Myo.</li>
-                           </ul>
-                       </ul>
-                   </div>
-               </div>
-           </div>
-
-           <h2>IMPURITAS CIVITATIS</h2>
-
-           <p class="excludedChannelList">
-               Excluded channels: <br>
-               <span class="fakePingName">#ruina-impuritas</span>
-               <span class="fakePingName">#ruina-spoilers</span>
-               <span class="fakePingName">#impuritas-deck-design</span>
-               <span class="fakePingName">#ruina-mods</span>
-               <span class="fakePingName">#ruina-modding</span>
-               <span class="fakePingName">#spoiler-ruina-fan-content</span>
-               <span class="fakePingName">Limbus Category</span>
-           </p>
-
-           <div>
-               <div class="bigSpoilerSection">
-                   <button onclick=showSpoilers("spoilerDetails14")>Show Spoilers</button>
-                   <div class="spoilerBlock" id="spoilerDetails14">
-                       <ul>
-                           <li>Hana Association's pages, battle appearances and story;</li>
-                           <ul>
-                               <li>Mirinae;</li>
-                               <li>Harold;</li>
-                               <li>Olivier;</li>
-                           </ul>
-                           <li>Angelica's name reveal;</li>
-                           <li>The Reverberation Ensemble and The Reverberation Ensemble Distorted's pages, battle appearances and story;</li>
-                           <ul>
-                               <li>Philip (Ensemble);</li>
-                               <li>Eileen (Ensemble);</li>
-                               <li>Bremen;</li>
-                               <li>Greta;</li>
-                               <li>Oswald (Ensemble);</li>
-                               <li>Tanya (Ensemble);</li>
-                               <li>Jae-heon (Ensemble);</li>
-                               <li>Puppet Angelica;</li>
-                               <li>Elena (Ensemble);</li>
-                               <li>The Vermillion Cross;</li>
-                               <li>Pluto;</li>
-                               <li>Argalia;</li>
-                           </ul>
-                           <li>The Black Silence;</li>
-                           <ul>
-                               <li>Keypage and new pages;</li>
-                               <li>All reception phases;</li>
-                               <li>Smoke War monster;</li>
-                           </ul>
-                       </ul>
-                   </div>
-               </div>
-               <div class="bigSpoilerSection exceptions">
-                   <button onclick=showSpoilers("spoilerDetails15")>Show Exceptions</button>
-                   <div class="spoilerBlock" id="spoilerDetails15">
-                       <ul>
-                           <li>Details mentioned in Limbus about specific organizations, in a context vacuum;</li>
-                           <ul>
-                               <li>Hana Association's outfit.</li>
-                           </ul>
-                           <li>
-                               Appearances or mentions of any Reverberation Ensemble members before their fight,
-                               be it through cutscenes or fights;
-                           </li>
-                           <ul>
-                               <li>Philip's previous forms (Dawn Office, Waxen pinion/Unstable EGO, Crying Children), cutscene appearances and story;</li>
-                               <li>Eileen's previous cutscene appearances and story;</li>
-                               <li>Greta's previous cutscene appearances and story;</li>
-                               <li>Oswald's previous cutscene appearances and story;</li>
-                               <li>Tanya's previous cutscene appearances and story;</li>
-                               <li>Jae-heon's previous form (Disguised), previous cutscene appearances and story;</li>
-                               <li>Elena's previous form (Disguised), previous cutscene appearances and story;</li>
-                               <li>Pluto's previous cutscene appearances and story;</li>
-                               <li>Argalia's previous battle appearances, cutscene appearances and story;</li>
-                           </ul>
-                           <li>
-                               Appearances or mentions of characters before their fights, in
-                               cutscenes and credenza, in a context vacuum;
-                           </li>
-                           <ul>
-                               <li>
-                                   The existence of The Black Silence, as mentioned in the Musicians of Bremen,
-                                   The Thumb's cutscenes, and credenza entries;
-                               </li>
-                           </ul>
-                       </ul>
-                   </div>
-               </div>
-           </div>
-
-           <h1>REALIZATIONS</h1>
-           <p>
-               All realizations, regardless of point in the game, are considered spoilers in channels without spoiler immunities
-               for a specific progression stage. This includes all cutscenes, gameplay gimmicks, rewards and changes in apperance to
-               reoccuring characters. You may explain the general concept of realizations without it being considered a spoiler.
-           </p>
-
-           <h2>URBAN NIGHTMARE</h2>
-
-           <p class="excludedChannelList">
-               Excluded channels: <br>
-               <span class="fakePingName">#ruina-star-of-city</span>
-               <span class="fakePingName">#ruina-impuritas</span>
-               <span class="fakePingName">#ruina-spoilers</span>
-               <span class="fakePingName">#star-of-city-deck-design</span>
-               <span class="fakePingName">#impuritas-deck-design</span>
-               <span class="fakePingName">#ruina-mods</span>
-               <span class="fakePingName">#ruina-modding</span>
-               <span class="fakePingName">#spoiler-ruina-fan-content</span>
-               <span class="fakePingName">Limbus Category</span>
-           </p>
-
-           <div>
-               <div class="bigSpoilerSection">
-                   <button onclick=showSpoilers("spoilerDetails16")>Show Spoilers</button>
-                   <div class="spoilerBlock" id="spoilerDetails16">
-                       <ul>
-                           <li>New pages, passives, and gimmicks;</li>
-                           <li>Changes to Angela's outfit;</li>
-                           <li>Pre-fight and post-fight cutscenes, as well as new story details contained within;</li>
-                           <li>Apperance of already introduced Abnormalities/EGO without previous books:</li>
-                           <ul>
-                               <li>Snow White's Apple/Green Stem;</li>
-                               <li>Der Freischütz/Magic Bullet.</li>
-                           </ul>
-                       </ul>
-                   </div>
-               </div>
-               <div class="bigSpoilerSection exceptions">
-                   <button onclick=showSpoilers("spoilerDetails17")>Show Exceptions</button>
-                   <div class="spoilerBlock" id="spoilerDetails17">
-                       <ul>
-                           <li>Aspects and details regarding Angela's story previously mentioned in Lobotomy Corporation.</li>
-                       </ul>
-                   </div>
-               </div>
-           </div>
-
-           <h2>STAR OF THE CITY</h2>
-
-           <p class="excludedChannelList">
-               Excluded channels: <br>
-               <span class="fakePingName">#ruina-star-of-city</span>
-               <span class="fakePingName">#ruina-impuritas</span>
-               <span class="fakePingName">#ruina-spoilers</span>
-               <span class="fakePingName">#star-of-city-deck-design</span>
-               <span class="fakePingName">#impuritas-deck-design</span>
-               <span class="fakePingName">#ruina-mods</span>
-               <span class="fakePingName">#ruina-modding</span>
-               <span class="fakePingName">#spoiler-ruina-fan-content</span>
-               <span class="fakePingName">Limbus Category</span>
-           </p>
-
-           <div>
-               <div class="bigSpoilerSection singleRowSpoiler">
-                   <button onclick=showSpoilers("spoilerDetails18")>Show Spoilers</button>
-                   <div class="spoilerBlock" id="spoilerDetails18">
-                       <ul>
-                           <li>New pages, passives, and gimmicks;</li>
-                           <li>Changes to Angela's and Roland's outfits;</li>
-                           <li>Pre-fight, post-fight cutscenes and new story details contained within;</li>
-                           <li>Apperance of Abnormalities/EGO without previous books:</li>
-                           <ul>
-                               <li>Dream of a Black Swan;</li>
-                               <li>The Silent Orchestra/Da Capo;</li>
-                               <li>Jester of Nihil;</li>
-                               <li>Oz/The Adult who tells Lies;</li>
-                               <li>Nothing There/Mimicry.</li>
-                           </ul>
-                       </ul>
-                   </div>
-               </div>
-           </div>
-
-           <h2>IMPURITAS CIVITATIS</h2>
-
-           <p class="excludedChannelList">
-               Excluded channels: <br>
-               <span class="fakePingName">#ruina-impuritas</span>
-               <span class="fakePingName">#ruina-spoilers</span>
-               <span class="fakePingName">#impuritas-deck-design</span>
-               <span class="fakePingName">#ruina-mods</span>
-               <span class="fakePingName">#ruina-modding</span>
-               <span class="fakePingName">#spoiler-ruina-fan-content</span>
-               <span class="fakePingName">Limbus Category</span>
-           </p>
-
-           <div>
-               <div class="bigSpoilerSection">
-                   <button onclick=showSpoilers("spoilerDetails20")>Show Spoilers</button>
-                   <div class="spoilerBlock" id="spoilerDetails20">
-                       <ul>
-                           <li>New pages, passives, and gimmicks;</li>
-                           <li>Changes to Angela's and Roland's outfits;</li>
-                           <li>Pre-fight, post-fight cutscenes and new story details contained within;</li>
-                           <li>Apperance of already introduced Abnormalities/EGO without previous books:</li>
-                           <ul>
-                               <li>Apocalypse Bird/Twilight;</li>
-                               <li>Whitenight/Prophet/Paradise Lost;</li>
-                               <li>One Sin and Hundreds of Good Deeds.</li>
-                               <li>Silent Girl;</li>
-                           </ul>
-                       </ul>
-                   </div>
-               </div>
-               <div class="bigSpoilerSection exceptions">
-                   <button onclick=showSpoilers("spoilerDetails13")>Show Exceptions</button>
-                   <div class="spoilerBlock" id="spoilerDetails13">
-                       <ul>
-                           <li>
-                               Refferences to these abnormalities in a context vacuum,
-                               only by their appearances in older Lobotomy Corporation
-                               builds or trailers;
-                           </li>
-                           <ul>
-                               <li>Silent Girl;</li>
-                           </ul>
-                       </ul>
-                   </div>
-               </div>
-           </div>
+            <h1>LIBRARY OF RUINA</h1>
+            <img src="LOR.png" alt="Logo of Library of Ruina" class="logoImage">
 
 
-           <h1>LIMBUS COMPANY</h1>
-           <img src="LCB.png" alt="Logo of Limbus Company" class="logoImage">
+            <h1>RECEPTIONS</h1>
+            <p>
+                Any and all receptions above the Urban Nightmare Level are classified as a general spoiler.
+                This includes pages, characters (including unnamed extra enemies), cutscenes, dialogue and lore. If their respective organizations
+                or individual characters are mentioned previously in the game, only the new content is considered a spoiler.
+            </p>
+
+            <h2>STAR OF THE CITY</h2>
+
+            <p class="excludedChannelList">
+                Excluded channels: <br>
+                <span class="fakePingName">#ruina-star-of-city</span>
+                <span class="fakePingName">#ruina-impuritas</span>
+                <span class="fakePingName">#ruina-spoilers</span>
+                <span class="fakePingName">#star-of-city-deck-design</span>
+                <span class="fakePingName">#impuritas-deck-design</span>
+                <span class="fakePingName">#ruina-mods</span>
+                <span class="fakePingName">#ruina-modding</span>
+                <span class="fakePingName">#spoiler-ruina-fan-content</span>
+                <span class="fakePingName">Limbus Category</span>
+            </p>
+
+            <div>
+                <div class="bigSpoilerSection">
+                    <button onclick=showSpoilers("spoilerDetails7")>Show Spoilers</button>
+                    <div class="spoilerBlock" id="spoilerDetails7">
+                        <ul>
+                            <li>The Thumb's pages, battle appearances and story;</li>
+                            <ul>
+                                <li>Katriel;</li>
+                                <li>Denis</li>
+                                <li>Boris;</li>
+                                <li>Kalo;</li>
+                            </ul>
+                            <li>The Index's new pages, battle appearances and story;</li>
+                            <ul>
+                                <li>Esther;</li>
+                                <li>Gloria</li>
+                                <li>Hubert;</li>
+                            </ul>
+                            <li> 얀샋ㄷ요무's (Distorted Yan) pages, battle appearances and story;</li>
+                            <ul>
+                                <li>얀샋ㄷ요무;</li>
+                                <li>Moirai (The Weaver);</li>
+                            </ul>
+                            <li> Blue Reverberation's (Church of Gears) pages, battle appearances and story;</li>
+                            <ul>
+                                <li>Church of Gears Worshipers;</li>
+                                <li>Argalia</li>
+                            </ul>
+                            <li> The Red Mist's pages, battle appearances and story;</li>
+                            <li> The Purple Tear's pages, battle appearances and story;</li>
+                            <li> Liu Association and Xiao's pages, battle appearances and story;</li>
+                            <ul>
+                                <li>Mei;</li>
+                                <li>Cecil;</li>
+                                <li>Lowell;</li>
+                                <li>Chun;</li>
+                                <li>Miris;</li>
+                                <li>Xiao;</li>
+                            </ul>
+                            <li> Cane Office pages, battle appearances and story;</li>
+                            <ul>
+                                <li>Bada;</li>
+                                <li>Martina;</li>
+                                <li>Nemo;</li>
+                            </ul>
+                            <li> R. Corp pages, battle appearances and story;</li>
+                            <ul>
+                                <li>Myo;</li>
+                                <li>Maxim;</li>
+                                <li>Rudolph;</li>
+                                <li>Nikolai;</li>
+                            </ul>
+                            <li> General invitation's credenza book lore;</li>
+                            <ul>
+                                <li>Dong-hwan;</li>
+                                <li>Night Awls + Allen;</li>
+                                <li>Udjat;</li>
+                                <li>Mirae Life Insurance + Irina;</li>
+                                <li>Leaflet Workshop + Yae;</li>
+                                <li>Bayard's Office.</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bigSpoilerSection exceptions">
+                    <button onclick=showSpoilers("spoilerDetails8")>Show Exceptions</button>
+                    <div class="spoilerBlock" id="spoilerDetails8">
+                        <ul>
+                            <li>Details mentioned in Limbus about specific organizations, in a context vacuum;</li>
+                            <ul>
+                                <li>Liu Association's general fire theme;</li>
+                                <li>Church of Gear Worshippers' existence;</li>
+                                <li>R. Corp's clone arena, as described by R. Corp Merusault's uptie story;</li>
+                            </ul>
+                            <li>
+                                Appearances or mentions of characters before their fights, in
+                                cutscenes and credenza, in a context vacuum;
+                            </li>
+                            <ul>
+                                <li>The existence of The Index, as well as their Urban Nightmare fight;</li>
+                                <li>Yan's apperances in cutscenes;</li>
+                                <li>Argalia's apperances in cutscenes;</li>
+                                <li>
+                                    The existence of The Purple Tear, as mentioned in the Canard intro cutscene, and credenza entries;
+                                </li>
+                            </ul>
+                            <li>
+                                Appearances of characters which appeared in Lobotomy Corporation;
+                            </li>
+                            <ul>
+                                <li>Kali/The Red Mist;</li>
+                                <li>Myo.</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h2>IMPURITAS CIVITATIS</h2>
+
+            <p class="excludedChannelList">
+                Excluded channels: <br>
+                <span class="fakePingName">#ruina-impuritas</span>
+                <span class="fakePingName">#ruina-spoilers</span>
+                <span class="fakePingName">#impuritas-deck-design</span>
+                <span class="fakePingName">#ruina-mods</span>
+                <span class="fakePingName">#ruina-modding</span>
+                <span class="fakePingName">#spoiler-ruina-fan-content</span>
+                <span class="fakePingName">Limbus Category</span>
+            </p>
+
+            <div>
+                <div class="bigSpoilerSection">
+                    <button onclick=showSpoilers("spoilerDetails14")>Show Spoilers</button>
+                    <div class="spoilerBlock" id="spoilerDetails14">
+                        <ul>
+                            <li>Hana Association's pages, battle appearances and story;</li>
+                            <ul>
+                                <li>Mirinae;</li>
+                                <li>Harold;</li>
+                                <li>Olivier;</li>
+                            </ul>
+                            <li>Angelica's name reveal;</li>
+                            <li>The Reverberation Ensemble and The Reverberation Ensemble Distorted's pages, battle appearances and story;</li>
+                            <ul>
+                                <li>Philip (Ensemble);</li>
+                                <li>Eileen (Ensemble);</li>
+                                <li>Bremen;</li>
+                                <li>Greta;</li>
+                                <li>Oswald (Ensemble);</li>
+                                <li>Tanya (Ensemble);</li>
+                                <li>Jae-heon (Ensemble);</li>
+                                <li>Puppet Angelica;</li>
+                                <li>Elena (Ensemble);</li>
+                                <li>The Vermillion Cross;</li>
+                                <li>Pluto;</li>
+                                <li>Argalia;</li>
+                            </ul>
+                            <li>The Black Silence;</li>
+                            <ul>
+                                <li>Keypage and new pages;</li>
+                                <li>All reception phases;</li>
+                                <li>Smoke War monster;</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bigSpoilerSection exceptions">
+                    <button onclick=showSpoilers("spoilerDetails15")>Show Exceptions</button>
+                    <div class="spoilerBlock" id="spoilerDetails15">
+                        <ul>
+                            <li>Details mentioned in Limbus about specific organizations, in a context vacuum;</li>
+                            <ul>
+                                <li>Hana Association's outfit.</li>
+                            </ul>
+                            <li>
+                                Appearances or mentions of any Reverberation Ensemble members before their fight,
+                                be it through cutscenes or fights;
+                            </li>
+                            <ul>
+                                <li>Philip's previous forms (Dawn Office, Waxen pinion/Unstable EGO, Crying Children), cutscene appearances and story;</li>
+                                <li>Eileen's previous cutscene appearances and story;</li>
+                                <li>Greta's previous cutscene appearances and story;</li>
+                                <li>Oswald's previous cutscene appearances and story;</li>
+                                <li>Tanya's previous cutscene appearances and story;</li>
+                                <li>Jae-heon's previous form (Disguised), previous cutscene appearances and story;</li>
+                                <li>Elena's previous form (Disguised), previous cutscene appearances and story;</li>
+                                <li>Pluto's previous cutscene appearances and story;</li>
+                                <li>Argalia's previous battle appearances, cutscene appearances and story;</li>
+                            </ul>
+                            <li>
+                                Appearances or mentions of characters before their fights, in
+                                cutscenes and credenza, in a context vacuum;
+                            </li>
+                            <ul>
+                                <li>
+                                    The existence of The Black Silence, as mentioned in the Musicians of Bremen,
+                                    The Thumb's cutscenes, and credenza entries;
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h1>REALIZATIONS</h1>
+            <p>
+                All realizations, regardless of point in the game, are considered spoilers in channels without spoiler immunities
+                for a specific progression stage. This includes all cutscenes, gameplay gimmicks, rewards and changes in apperance to
+                reoccuring characters. You may explain the general concept of realizations without it being considered a spoiler.
+            </p>
+
+            <h2>URBAN NIGHTMARE</h2>
+
+            <p class="excludedChannelList">
+                Excluded channels: <br>
+                <span class="fakePingName">#ruina-star-of-city</span>
+                <span class="fakePingName">#ruina-impuritas</span>
+                <span class="fakePingName">#ruina-spoilers</span>
+                <span class="fakePingName">#star-of-city-deck-design</span>
+                <span class="fakePingName">#impuritas-deck-design</span>
+                <span class="fakePingName">#ruina-mods</span>
+                <span class="fakePingName">#ruina-modding</span>
+                <span class="fakePingName">#spoiler-ruina-fan-content</span>
+                <span class="fakePingName">Limbus Category</span>
+            </p>
+
+            <div>
+                <div class="bigSpoilerSection">
+                    <button onclick=showSpoilers("spoilerDetails16")>Show Spoilers</button>
+                    <div class="spoilerBlock" id="spoilerDetails16">
+                        <ul>
+                            <li>New pages, passives, and gimmicks;</li>
+                            <li>Changes to Angela's outfit;</li>
+                            <li>Pre-fight and post-fight cutscenes, as well as new story details contained within;</li>
+                            <li>Apperance of already introduced Abnormalities/EGO without previous books:</li>
+                            <ul>
+                                <li>Snow White's Apple/Green Stem;</li>
+                                <li>Der Freischütz/Magic Bullet.</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bigSpoilerSection exceptions">
+                    <button onclick=showSpoilers("spoilerDetails17")>Show Exceptions</button>
+                    <div class="spoilerBlock" id="spoilerDetails17">
+                        <ul>
+                            <li>Aspects and details regarding Angela's story previously mentioned in Lobotomy Corporation.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h2>STAR OF THE CITY</h2>
+
+            <p class="excludedChannelList">
+                Excluded channels: <br>
+                <span class="fakePingName">#ruina-star-of-city</span>
+                <span class="fakePingName">#ruina-impuritas</span>
+                <span class="fakePingName">#ruina-spoilers</span>
+                <span class="fakePingName">#star-of-city-deck-design</span>
+                <span class="fakePingName">#impuritas-deck-design</span>
+                <span class="fakePingName">#ruina-mods</span>
+                <span class="fakePingName">#ruina-modding</span>
+                <span class="fakePingName">#spoiler-ruina-fan-content</span>
+                <span class="fakePingName">Limbus Category</span>
+            </p>
+
+            <div>
+                <div class="bigSpoilerSection singleRowSpoiler">
+                    <button onclick=showSpoilers("spoilerDetails18")>Show Spoilers</button>
+                    <div class="spoilerBlock" id="spoilerDetails18">
+                        <ul>
+                            <li>New pages, passives, and gimmicks;</li>
+                            <li>Changes to Angela's and Roland's outfits;</li>
+                            <li>Pre-fight, post-fight cutscenes and new story details contained within;</li>
+                            <li>Apperance of Abnormalities/EGO without previous books:</li>
+                            <ul>
+                                <li>Dream of a Black Swan;</li>
+                                <li>The Silent Orchestra/Da Capo;</li>
+                                <li>Jester of Nihil;</li>
+                                <li>Oz/The Adult who tells Lies;</li>
+                                <li>Nothing There/Mimicry.</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h2>IMPURITAS CIVITATIS</h2>
+
+            <p class="excludedChannelList">
+                Excluded channels: <br>
+                <span class="fakePingName">#ruina-impuritas</span>
+                <span class="fakePingName">#ruina-spoilers</span>
+                <span class="fakePingName">#impuritas-deck-design</span>
+                <span class="fakePingName">#ruina-mods</span>
+                <span class="fakePingName">#ruina-modding</span>
+                <span class="fakePingName">#spoiler-ruina-fan-content</span>
+                <span class="fakePingName">Limbus Category</span>
+            </p>
+
+            <div>
+                <div class="bigSpoilerSection">
+                    <button onclick=showSpoilers("spoilerDetails20")>Show Spoilers</button>
+                    <div class="spoilerBlock" id="spoilerDetails20">
+                        <ul>
+                            <li>New pages, passives, and gimmicks;</li>
+                            <li>Changes to Angela's and Roland's outfits;</li>
+                            <li>Pre-fight, post-fight cutscenes and new story details contained within;</li>
+                            <li>Apperance of already introduced Abnormalities/EGO without previous books:</li>
+                            <ul>
+                                <li>Apocalypse Bird/Twilight;</li>
+                                <li>Whitenight/Prophet/Paradise Lost;</li>
+                                <li>One Sin and Hundreds of Good Deeds.</li>
+                                <li>Silent Girl;</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bigSpoilerSection exceptions">
+                    <button onclick=showSpoilers("spoilerDetails13")>Show Exceptions</button>
+                    <div class="spoilerBlock" id="spoilerDetails13">
+                        <ul>
+                            <li>
+                                Refferences to these abnormalities in a context vacuum,
+                                only by their appearances in older Lobotomy Corporation
+                                builds or trailers;
+                            </li>
+                            <ul>
+                                <li>Silent Girl;</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
 
-           <h1>NEWCOMERS + HELP SPECIFIC</h1>
+            <h1>LIMBUS COMPANY</h1>
+            <img src="LCB.png" alt="Logo of Limbus Company" class="logoImage">
 
-           <p class="excludedChannelList">
-               Excluded channels: <br>
-               <span class="fakePingName">Lobotomy Corporation Section</span>
-               <span class="fakePingName">Ruina Section</span>
-               <span class="fakePingName">#limbus-discussions</span>
-               <span class="fakePingName">#limbus-lounge</span>
-               <span class="fakePingName">#limbus-spoilers</span>
-               <span class="fakePingName">#limbus-fan-content</span>
-               <span class="fakePingName">#limbus-creator-content</span>
-               <span class="fakePingName">#limbus-character-workshop</span>
-               <span class="fakePingName">#limbus-asset-posting</span>
-               <span class="fakePingName">#limbus-showcase</span>
-               <span class="fakePingName">#limbus-datamining</span>
-           </p>
-           <p>
-               As <span class="fakePingName">#limbus-newcomers</span> and
-               <span class="fakePingName">#limbus-help</span> are meant to house players who have
-               just started playing the game, previous content which is not considered spoilers
-               anymore is still subject to spoiler rules within those channels. This mainly includes details from
-               story dungeons or important boss fights, notably those backed with songs composed
-               by the MILI group.
-           </p>
-           <p>
-               This section was originally written by <span class="fakePingName">@kavtech</span> and <span class="fakePingName">@eadenly</span>.
-           </p>
-           <div>
-               <div class="bigSpoilerSection">
-                   <button onclick=showSpoilers("spoilerDetails9")>Show Spoilers</button>
-                   <div class="spoilerBlock" id="spoilerDetails9">
-                       <ul>
-                           <li>
-                               Boss fights and cutscenes played on boss fight stages
-                               from main Cantos which contain unique soundtracks (only played in that scenario or rematches in MDs);
-                           </li>
-                           <ul>
-                               <li>Kromer;</li>
-                               <li>Spicebush Dongbaek;</li>
-                               <li>Dongrang;</li>
-                               <li>Ripageo;</li>
-                               <li>Pequod Trio;</li>
-                               <li>Gasharpoon EGO Ahab;</li>
-                               <li>Heathcliff?/Erlking Heath;</li>
-                               <li>Corroded Heathcliff;</li>
-                               <li>Nelly;</li>
-                               <li>Every Cathy;</li>
-                               <li>The Barber;</li>
-                               <li>Dulcinea;</li>
-                               <li>The Priest (Bloodfiend Trio);</li>
-                               <li>Sancho;</li>
-                               <li>Don Quixote (Father);</li>
-                           </ul>
-                           <li>Vergillius EGO activation.</li>
-                       </ul>
-                   </div>
-               </div>
-               <div class="bigSpoilerSection exceptions">
-                   <button onclick=showSpoilers("spoilerDetails10")>Show Exceptions</button>
-                   <div class="spoilerBlock" id="spoilerDetails10">
-                       <ul>
-                           <li>
-                               Appearances or mentions of Main Canto bosses before their fight, if the mention
-                               occurred outside of a previously outlined spoiler context (stage without unique background).
-                           </li>
-                           <ul>
-                               <li>Kromer;</li>
-                               <li>Dongbaek (Non-Sunshower, Non-spicebush);</li>
-                               <li>Dongrang;</li>
-                               <li>Pequod Trio;</li>
-                               <li>Nelly;</li>
-                               <li>The Priest;</li>
-                           </ul>
-                       </ul>
-                   </div>
-               </div>
-           </div>
 
-           <h1>CURRENT SPOILERS</h1>
-           <p>
-               As Limbus is a constantly updating game, we aim to enforce a spoiler-free experience within the server for
-               at least <u>1 week</u> when new content is released. The exceptions for this time requirement are all channels
-               restricted behind the "Ongoing PM Content" Role, in which only 2 hours of release are needed for any content
-               to be unclassified as a spoiler.
-           </p>
-           <div>
-               <div class="bigSpoilerSection singleRowSpoiler">
-                   <button onclick=showSpoilers("spoilerDetails11")>Show Spoilers</button>
-                   <div class="spoilerBlock" id="spoilerDetails11">
-                       <ul>
-                           <li>Attacks, apperances, mechanics and passives from the new abnormalities introduced in Refraction Railway 5:</li>
-                           <ul>
-                               <li>Sleeping Bag of a Bygone Day (Nebulizer);</li>
-                               <li>Der Fluchschütze;</li>
-                               <li>Four-Hundred Roses;</li>
-                           </ul>
-                           <li>Specific new Envy Pecatulum ID's.</li>
-                       </ul>
-                   </div>
-               </div>
-           </div>
-       </div>
-</main>
+            <h1>NEWCOMERS + HELP SPECIFIC</h1>
+
+            <p class="excludedChannelList">
+                Excluded channels: <br>
+                <span class="fakePingName">Lobotomy Corporation Section</span>
+                <span class="fakePingName">Ruina Section</span>
+                <span class="fakePingName">#limbus-discussions</span>
+                <span class="fakePingName">#limbus-lounge</span>
+                <span class="fakePingName">#limbus-spoilers</span>
+                <span class="fakePingName">#limbus-fan-content</span>
+                <span class="fakePingName">#limbus-creator-content</span>
+                <span class="fakePingName">#limbus-character-workshop</span>
+                <span class="fakePingName">#limbus-asset-posting</span>
+                <span class="fakePingName">#limbus-showcase</span>
+                <span class="fakePingName">#limbus-datamining</span>
+            </p>
+            <p>
+                As <span class="fakePingName">#limbus-newcomers</span> and
+                <span class="fakePingName">#limbus-help</span> are meant to house players who have
+                just started playing the game, previous content which is not considered spoilers
+                anymore is still subject to spoiler rules within those channels. This mainly includes details from
+                story dungeons or important boss fights, notably those backed with songs composed
+                by the MILI group.
+            </p>
+            <p>
+                This section was originally written by <span class="fakePingName">@kavtech</span> and <span class="fakePingName">@eadenly</span>.
+            </p>
+            <div>
+                <div class="bigSpoilerSection">
+                    <button onclick=showSpoilers("spoilerDetails9")>Show Spoilers</button>
+                    <div class="spoilerBlock" id="spoilerDetails9">
+                        <ul>
+                            <li>
+                                Boss fights and cutscenes played on boss fight stages
+                                from main Cantos which contain unique soundtracks (only played in that scenario or rematches in MDs);
+                            </li>
+                            <ul>
+                                <li>Kromer;</li>
+                                <li>Spicebush Dongbaek;</li>
+                                <li>Dongrang;</li>
+                                <li>Ripageo;</li>
+                                <li>Pequod Trio;</li>
+                                <li>Gasharpoon EGO Ahab;</li>
+                                <li>Heathcliff?/Erlking Heath;</li>
+                                <li>Corroded Heathcliff;</li>
+                                <li>Nelly;</li>
+                                <li>Every Cathy;</li>
+                            </ul>
+                            <li>Vergillius EGO activation.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bigSpoilerSection exceptions">
+                    <button onclick=showSpoilers("spoilerDetails10")>Show Exceptions</button>
+                    <div class="spoilerBlock" id="spoilerDetails10">
+                        <ul>
+                            <li>
+                                Appearances or mentions of main Canto bosses before their fight, if the mention
+                                occurred outside of a previously outlined spoiler context (stage without unique background).
+                            </li>
+                            <ul>
+                                <li>Kromer;</li>
+                                <li>Dongbaek (Non-Sunshower, Non-spicebush);</li>
+                                <li>Dongrang;</li>
+                                <li>Pequod Trio;</li>
+                                <li>Nelly;</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h1>CURRENT SPOILERS</h1>
+            <p>
+                As Limbus is a constantly updating game, we aim to enforce a spoiler-free experience within the server for
+                at least <u>1 week</u> when new content is released. The exceptions for this time requirement are all channels
+                restricted behind the "Ongoing PM Content" Role, in which only 2 hours of release are needed for any content
+                to be unclassified as a spoiler.
+            </p>
+            <div>
+                <div class="bigSpoilerSection">
+                    <button onclick=showSpoilers("spoilerDetails11")>Show Spoilers</button>
+                    <div class="spoilerBlock" id="spoilerDetails11">
+                        <ul>
+                            <li>
+                                Boss fights and cutscenes played on boss fight stages
+                                from the most recent Canto which contain unique soundtracks (only played in that scenario or rematches in MDs);
+                            </li>
+                            <ul>
+                                <li>The Barber;</li>
+                                <li>Dulcinea;</li>
+                                <li>The Priest (Bloodfiend Trio);</li>
+                                <li>Sancho;</li>
+                                <li>Don Quixote (Father);</li>
+                            </ul>
+                            <li>Attacks, apperances, mechanics and passives from the new abnormalities introduced in Refraction Railway 5:</li>
+                            <ul>
+                                <li>Sleeping Bag of a Bygone Day (Nebulizer);</li>
+                                <li>Der Fluchschütze;</li>
+                                <li>Four-Hundred Roses;</li>
+                            </ul>
+                            <li>Specific new Envy Pecatulum ID's.</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="bigSpoilerSection exceptions">
+                    <button onclick=showSpoilers("spoilerDetails12")>Show Exceptions</button>
+                    <div class="spoilerBlock" id="spoilerDetails12">
+                        <ul>
+                            <li>
+                                Appearances or mentions of current Canto bosses before their fight, if the mention
+                                occurred outside of a previously outlined spoiler context (stage without unique background).
+                            </li>
+                            <ul>
+                                <li>The Priest;</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

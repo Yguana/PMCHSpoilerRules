@@ -267,7 +267,7 @@ h2 {
     }
 
     .bigSpoilerHolder > div {
-        width: 80%;
+        width: 100%;
         grid-template-columns: 1fr;
         row-gap: 30px
     }
